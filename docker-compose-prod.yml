@@ -1,15 +1,15 @@
 version: '3'
 services:
-  # CHANGE-web:
-    # image: trzl/CHANGE-web
-    # container_name: CHANGE-web
+  web:
+    image: trzl/portfolio:boltnetwork-web_v1
+    container_name: boltnetwork-web
     restart: unless-stopped
     expose:
       - "80"
       - "443"
     environment:
-      # VIRTUAL_HOST: CHANGE.tbrownkcdev.com
-      # LETSENCRYPT_HOST: CHANGE.tbrownkcdev.com
+      VIRTUAL_HOST: boltnetwork.tbrownkcdev.com
+      LETSENCRYPT_HOST: boltnetwork.tbrownkcdev.com
       LETSENCRYPT_EMAIL: brownty47@gmail.com
 networks:
   default:

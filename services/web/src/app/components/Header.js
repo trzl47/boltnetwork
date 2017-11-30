@@ -11,7 +11,7 @@ const Header = () => {
 					<nav>
 					<div className='row'>
 						<div className="col-md-2">
-							<img alt='' role='presentation' src={require('../../static/img/logo.svg')} width="180" height="34" />
+							<img alt='' rsrc={require('../../static/img/logo.svg')} width="180" height="34" />
 						</div>
 						<div className={['pull-right'].join(' ')}>
 							<ul>
