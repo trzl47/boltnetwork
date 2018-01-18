@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: trzl/portfolio:boltnetwork-web_v1
+    image: trzl/portfolio:boltnetwork-web_v0.0.1
     container_name: boltnetwork-web
     restart: unless-stopped
     expose:
